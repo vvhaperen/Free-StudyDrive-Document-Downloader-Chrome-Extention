@@ -12,7 +12,7 @@ This extension adds a **Download Document** button, you can download documents b
 
 ![Download ZIP](assets/02-chrome-show-in-folder.png)
 
-- **Step 3**: In Chrome’s download bar, click the ZIP menu and choose **Show in folder**
+- **Step 3**: Right click the downloaded ZIP file and choose **Show in folder**
 
 ![Show in folder](assets/02b-show-in-folder.png)
 
@@ -20,7 +20,7 @@ This extension adds a **Download Document** button, you can download documents b
 
 ![Extract All…](assets/03-extract-all.png)
 
-- **Step 5**: Open Chrome and go to `chrome://extensions`, turn on **Developer mode**, then click **Load unpacked** and select the extracted folder (the one that contains `manifest.json`)
+- **Step 5**: Open Chrome and go to `chrome://extensions`, turn on **Developer mode**, then drag & drop the extracted file.
 
 ![Load unpacked + Developer mode](assets/04-load-unpacked.png)
 
