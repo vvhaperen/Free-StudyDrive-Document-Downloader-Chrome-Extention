@@ -13,14 +13,19 @@
   "permissions": [
     "activeTab",
     "scripting",
-    "tabs"
+    "tabs",
+    "downloads"
   ],
   "host_permissions": [
-    "https://www.studydrive.net/*"
+    "https://www.studydrive.net/*",
+    "https://*/*"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
-      "matches": ["https://www.studydrive.net/*/doc/*"],
+      "matches": ["https://www.studydrive.net/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
     }

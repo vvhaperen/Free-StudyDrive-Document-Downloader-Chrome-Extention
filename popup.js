@@ -58,23 +58,14 @@ document.addEventListener('DOMContentLoaded', async function() {
                     }
 
                     const downloadUrl = new URL(parsedLink, window.location.href).toString();
-                    const downloadResult = await fetch(downloadUrl, { credentials: 'include' });
-                    if (!downloadResult.ok) {
-                        alert('[StudyDrive Downloader] Failed to fetch file: ' + downloadResult.status + ' ' + downloadResult.statusText);
-                        return;
+                    const resp = await chrome.runtime.sendMessage({
+                        type: 'STUDYDRIVE_DOWNLOAD',
+                        url: downloadUrl,
+                        filename: fileName
+                    });
+                    if (!resp || !resp.ok) {
+                        alert('[StudyDrive Downloader] Download failed: ' + (resp && resp.error ? resp.error : 'unknown error'));
                     }
-                    const blob = await downloadResult.blob();
-
-                    const link = document.createElement('a');
-                    const objectUrl = window.URL.createObjectURL(blob);
-                    link.download = fileName;
-                    link.href = objectUrl;
-                    link.target = '_blank';
-                    link.rel = 'noopener';
-                    document.body.appendChild(link);
-                    link.click();
-                    link.remove();
-                    window.URL.revokeObjectURL(objectUrl);
                 } catch (e) {
                     alert('[StudyDrive Downloader] Error: ' + e.message);
                 }
