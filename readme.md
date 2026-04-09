@@ -35,6 +35,8 @@ This extension adds a **Download Document** button, you can download documents b
 - What you have to do (as a user), go to `chrome://extensions` and click **Reload**
 - You will find that the download button works again after the reload
 
+![Reload the extension](assets/06-extension-reload.png)
+
 ## Troubleshooting
 
 - **Button not showing**
