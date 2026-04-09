@@ -1,6 +1,6 @@
 # Free StudyDrive Document Downloader (Chrome Extension)
 
-This extension adds a **Download Document** button directly on StudyDrive document pages, so you can download the document without needing a premium UI flow.
+This extension adds a **Download Document** button directly on StudyDrive document pages, so you can download the document without paying.
 
 ## Install (from GitHub)
 
