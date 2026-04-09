@@ -29,6 +29,9 @@ This extension adds a **Download Document** button, you can download documents b
 - **Step 1**: Open a StudyDrive document page like:
   - `https://www.studydrive.net/<language>/doc/...`
 - **Step 2**: Look for the green **Download Document** button on the page (top-right)
+
+![Button location](assets/05-download-button-location.png)
+
 - **Step 3**: Click it — the download should start automatically
 
 ## Update the extension (when this repo changes)
