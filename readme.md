@@ -11,9 +11,6 @@ This Chrome extension allows you to download documents from StudyDrive.
 3. **Extract the ZIP Archive**
 
 
-    Extract the downloaded ZIP archive into a folder of your choice.
-![3](https://github.com/Hamidchkms/StudyDrive-Downloader-Extension/assets/85966772/1157cf2c-3d96-432e-b9ea-967745e21f3c)
-
 4. **Install the Extension**
 
     - Open Google Chrome.
