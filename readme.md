@@ -1,4 +1,4 @@
-# StudyDrive Downloader for free without premium⭐
+# StudyDrive Downloader for free without premium
 # Installation Guide for StudyDrive Downloader Extension
 
 This Chrome extension allows you to download documents from StudyDrive.
